@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
   get 'pictures' => 'pictures#index'
-
-  # Ignore the comments below for now
-  # They are just documentation
+  get 'pictures/:id' => 'pictures#show', as: 'picture'
 end
